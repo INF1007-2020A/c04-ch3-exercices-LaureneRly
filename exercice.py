@@ -27,7 +27,7 @@ def to_degrees(angle_rads: float) -> tuple:
     degreed = angle_rads*180/(math.pi)
     deg = degreed%60
     sec = (degreed%1)/60
-    minute = (degreed - deg - sec*60)/60/60 
+    minute = (degreed %1)/60/60 
     return deg, minute, sec
 
 
