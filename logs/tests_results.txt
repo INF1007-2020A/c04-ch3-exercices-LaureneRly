@@ -1,5 +1,5 @@
-test_average (__main__.TestExercice) ... FAIL
-test_square (__main__.TestExercice) ... FAIL
+test_average (__main__.TestExercice) ... ok
+test_square (__main__.TestExercice) ... ok
 test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... ERROR
@@ -14,39 +14,9 @@ Traceback (most recent call last):
     output = [exercice.to_degrees(v) for v in values]
   File "test_exercice.py", line 80, in <listcomp>
     output = [exercice.to_degrees(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-LaureneRly/c04-ch3-exercices-LaureneRly/exercice.py", line 28, in to_degrees
-    to_de
-NameError: name 'to_de' is not defined
-
-======================================================================
-FAIL: test_average (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 50, in test_average
-    'Mauvais calcul de la moyenne'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [4.0, 0.0, -2.3333333333333335]
-
-First differing element 0:
-0.0
-4.0
-
-- [0.0, 0.0, 0.0]
-+ [4.0, 0.0, -2.3333333333333335] : Mauvais calcul de la moyenne
-
-======================================================================
-FAIL: test_square (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 34, in test_square
-    'Mauvais calcul du carré'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [144, 40000, 400]
-
-First differing element 0:
-0.0
-144
-
-- [0.0, 0.0, 0.0]
-+ [144, 40000, 400] : Mauvais calcul du carré
+  File "/home/runner/work/c04-ch3-exercices-LaureneRly/c04-ch3-exercices-LaureneRly/exercice.py", line 27, in to_degrees
+    degree = rad
+NameError: name 'rad' is not defined
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -94,6 +64,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.002s
+Ran 7 tests in 0.001s
 
-FAILED (failures=5, errors=1)
+FAILED (failures=3, errors=1)
