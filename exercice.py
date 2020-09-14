@@ -9,7 +9,7 @@ def square_root(a: float) -> float:
 
 
 def square(a: float) -> float:
-    return a**2 #ou math.
+    return a**2 #ou math. qlq chose i guess
 
 
 def average(a: float, b: float, c: float) -> float:
