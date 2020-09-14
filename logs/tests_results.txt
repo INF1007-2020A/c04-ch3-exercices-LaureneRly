@@ -14,9 +14,9 @@ Traceback (most recent call last):
     output = [exercice.to_degrees(v) for v in values]
   File "test_exercice.py", line 80, in <listcomp>
     output = [exercice.to_degrees(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-LaureneRly/c04-ch3-exercices-LaureneRly/exercice.py", line 27, in to_degrees
-    degree = rad
-NameError: name 'rad' is not defined
+  File "/home/runner/work/c04-ch3-exercices-LaureneRly/c04-ch3-exercices-LaureneRly/exercice.py", line 28, in to_degrees
+    d
+NameError: name 'd' is not defined
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
